@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eventos</title>
+</head>
+<body>
+<h1>Lista de Enventos</h1>
+
+		<table>
+		
+		<thead>
+		<tr>
+			<th>id</th>
+			<th>Nome</th>
+			<th>Local</th>
+			<th>Data</th>
+			<th>Horario</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+		<tr th:eche="e : ${eventos}">
+		
+			<td th:text="${e.id}">1</td>
+			<td th:text="${e.nome}">Aniversario de Joao</td>
+			<td th:text="${e.local}">Clube</td>
+			<td th:text="${e.data}">25/01/2021</td>
+			<td th:text="${e.horario}">19:00</td>
+		</tr>
+		
+		</tbody>
+		</table>
+</body>
+</html>
